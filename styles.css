@@ -1,7 +1,7 @@
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;<
 }
 body {
     font-family: 'Monserrat', sans-serif;
@@ -30,7 +30,7 @@ body {
     color: #289097;
 }
 .header {
-    background-image: url("Img/uno.jpg");
+    background-image: url("Img/imagen\ 6.jpeg");
     height: 1500px;
     padding: 100px;
     background-size: cover;
@@ -276,4 +276,117 @@ body {
 .footer-contacto li{
     margin: 0 10px;
     font-size: 1.2rem;
+}
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .header {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  .habi-secciones {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .habi-seccion-dos {
+    margin-top: 40px;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .habi-seccion-dos img {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .sobre-mi {
+    flex-direction: column;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .sobre-mi-texto {
+    max-width: 100%;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .tecnologias {
+    font-size: 28px;
+    gap: 15px;
+  }
+
+  .tecnologias-icon-text {
+    font-size: 16px;
+  }
+
+  .habi h2 {
+    font-size: 1.3rem;
+  }
+
+  .sobre-mi-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-contacto li {
+    font-size: 1rem;
+  }
+}
+
+/* Pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .tecnologias {
+    font-size: 24px;
+  }
+
+  .sobre-mi-texto h2 {
+    font-size: 1.5rem;
+  }
 }
